@@ -1,0 +1,63 @@
+body {
+    padding-top: 40px;
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+.maintitle {
+    font-size: 28px;
+}
+
+.section-dark {
+    background-color: #efefef;
+}
+
+.section-lite {
+    background-color: #fff;
+}
+
+.section {
+    margin-top: 20px;
+    padding: 50px 0px;
+
+}
+
+.section h2 {
+    font-size: 20px;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-element {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #212121;
+    height: 140px;
+    line-height: 50px;
+    text-align: center;
+    color: #aaa;
+}
+
+.hero {
+    margin-bottom: 50px;
+}
+
+.generate {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#code{
+    background-color: #272822;
+    padding:20px;
+    font-size: 18px;
+}
+
+#codecontainer{
+    display: none;
+}
