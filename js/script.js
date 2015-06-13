@@ -101,7 +101,7 @@
                 "<%= fields %>         \n" +
                 "		)\n" +
                 "	);\n" +
-                "	return $meta_boxes;\n";+
+                "	return $meta_boxes;\n" +
                 "}\n";
 
             var fieldTemplate = _.template(field);
