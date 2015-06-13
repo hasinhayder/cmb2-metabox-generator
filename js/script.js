@@ -1,3 +1,8 @@
+/**
+ * @author: Hasin Hayder
+ * @date: June 14, 2015 4:05 AM
+ * @license: MIT
+ */
 ;(function($){
     var dirty = 0;
     var elements = {};
