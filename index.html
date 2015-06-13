@@ -42,10 +42,21 @@
             margin-bottom: 20px;
         }
 
+        .footer{
+            background-color: #212121;
+            height: 140px;
+            line-height: 50px;
+            text-align: center;
+            color: #aaa;
+        }
+        .hero{
+            margin-bottom: 50px;
+        }
+
     </style>
 </head>
 <body>
-<div class="container">
+<div class="container hero">
     <div class="row">
         <div class="col-md-12">
             <h1 class="maintitle">CMB2 Metabox Generator</h1>
@@ -179,7 +190,7 @@
                             <option value="group">Group</option>
                         </select>
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-3">
                         <label>Title</label>
                         <input type="text" class="form-control mb_field_name">
                     </div>
@@ -187,10 +198,10 @@
                         <label>Default value</label>
                         <input type="text" class="form-control mb_field_default">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-2">
                         <label>Action</label><br/>
-                        <a class="btn btn-primary add-more" href="">Add More</a>
-                        <a class="btn btn-danger remove" href="">Remove</a>
+                        <a class="btn btn-primary add-more" href=""> + </a>
+                        <a class="btn btn-danger remove" href=""> X </a>
                     </div>
                 </div>
             </div>
@@ -198,10 +209,18 @@
 
     </div>
 </div>
+<div class="section">
+
+</div>
+<div class="section footer">
+    <p>Built with Love by Hasin Hayder</p>
+</div>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 <script type="text/javascript">
+    var dirty = 0;
     $(document).ready(function () {
         $('#fields').on('click', '.add-more', function (e) {
+            dirty = 1;
             e.preventDefault();
             $(this).parents(".form-element").clone().appendTo("#fields");
             $(this).hide();
@@ -209,7 +228,7 @@
 
         $('#fields').on('click', '.remove', function (e) {
             e.preventDefault();
-            if (confirm("Are you sure to delete")) {
+            if (confirm("Are you sure to delete?")) {
                 $(this).parents(".form-element").remove();
                 $("#fields .form-element:last").find(".add-more").show();
             }
@@ -238,6 +257,12 @@
                 $("#fields .form-element:last").find(".add-more").show();
             }
         });
+
+//        $(window).on('beforeunload',function(){
+//            if(dirty){
+//                return "You have a work in progress!";
+//            }
+//        });
     });
 </script>
 </body>
