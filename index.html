@@ -42,14 +42,15 @@
             margin-bottom: 20px;
         }
 
-        .footer{
+        .footer {
             background-color: #212121;
             height: 140px;
             line-height: 50px;
             text-align: center;
             color: #aaa;
         }
-        .hero{
+
+        .hero {
             margin-bottom: 50px;
         }
 
@@ -112,6 +113,12 @@
                         <label>Metabox Priority</label>
                         <input type="text" class="form-control" id="mb_priority" value="high">
                     </div>
+                    <div class="form-group">
+                        <label>PHP Function Name</label>
+                        <input type="text" class="form-control" id="mb_function" value="cmb2_add_metabox">
+
+                        <p class="help-block">Optional function name</p>
+                    </div>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
@@ -120,10 +127,15 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <label>Show On Value</label>
-                            <input type="text" class="form-control" id="mb_so_value" placeholder="Show on value">
+                            <div class="form-group">
+                                <label>Show On Value</label>
+                                <input type="text" class="form-control" id="mb_so_value" placeholder="Show on value">
+                            </div>
                         </div>
                     </div>
+
+
+
                 </div>
             </form>
         </div>
@@ -238,7 +250,7 @@
             e.preventDefault();
             var fe = $(this).parents(".form-element");
             var prevfe = $(fe).prev(".form-element");
-            if(prevfe.length>0) {
+            if (prevfe.length > 0) {
                 fe.detach();
                 fe.insertBefore(prevfe);
                 fe.find(".add-more").hide();
@@ -249,7 +261,7 @@
             e.preventDefault();
             var fe = $(this).parents(".form-element");
             var nextfe = $(fe).next(".form-element");
-            if(nextfe.length>0) {
+            if (nextfe.length > 0) {
                 fe.detach();
                 fe.insertAfter(nextfe);
                 fe.find(".add-more").hide();
