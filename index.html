@@ -203,6 +203,38 @@
 
 </div>
 
+<!-- HTML element for option params when we select multicheck, multicheck_inline, radio, radio_inline and select field types  -->
+<div class="hidden" id="option-param-elem">
+    <div class="row option-param">
+        <div class="col-md-3">
+            <h4 class="text-right">options</h4>
+        </div>
+        <div class="col-md-2">
+            <select class="form-control opt-param-type">
+                <option value="array" selected>Array</option>
+                <option value="callback">Callback</option>
+            </select>
+        </div>
+        <div class="col-md-1 text-center" data-opt-type="array">
+            <a href="#move-up" class="btn btn-warning btn-xs opt-move-up" title="Move Up"><i class="glyphicon glyphicon-arrow-up"></i></a>
+            <a href="#move-down" class="btn btn-warning btn-xs opt-move-down" title="Move Down"><i class="glyphicon glyphicon-arrow-down"></i></a>
+        </div>
+        <div class="col-md-2" data-opt-type="array">
+            <input type="text" class="form-control opt-key" placeholder="key">
+        </div>
+        <div class="col-md-2" data-opt-type="array">
+            <input type="text" class="form-control opt-val" placeholder="value">
+        </div>
+        <div class="col-md-5 hidden" data-opt-type="callback">
+            <input type="text" class="form-control opt-callback" placeholder="callback function name">
+        </div>
+        <div class="col-md-2" data-opt-type="array">
+            <a class="btn btn-success btn-xs opt-add" href="#add-more" title="Add more">+</a>
+            <a class="btn btn-danger btn-xs opt-remove" href="#remove-this" title="Remove this">×</a>
+        </div>
+    </div>
+</div><!-- #option-param-elem -->
+
 <div class="section footer">
     <p>Built with Love by Hasin Hayder</p>
 </div>
