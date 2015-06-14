@@ -61,3 +61,30 @@ form {
 #codecontainer{
     display: none;
 }
+
+.opt-key, .opt-val, .opt-param-type, .opt-callback {
+    margin-top: 3px;
+}
+
+.option-param .btn-warning,
+.opt-add, .opt-remove {
+    margin-top: 10px;
+}
+
+.form-element .option-param .opt-add {
+    display: none;
+}
+
+.form-element .option-param:last-child .opt-add {
+    display: inline-block;
+}
+
+.form-element .option-param h4,
+.form-element .option-param .opt-param-type {
+    display: none;
+}
+
+.form-element .option-param:nth-child(2) h4,
+.form-element .option-param:nth-child(2) .opt-param-type {
+    display: block;
+}
