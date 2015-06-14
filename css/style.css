@@ -88,3 +88,18 @@ form {
 .form-element .option-param:nth-child(2) .opt-param-type {
     display: block;
 }
+
+.move-up, .move-down{
+    text-align: center;
+    line-height:20px;
+}
+
+.move-up i, .move-down i{
+    font-size:9px;
+    margin:0px;
+}
+
+.remove{
+    line-height: 20px;
+    font-size:11px;
+}
