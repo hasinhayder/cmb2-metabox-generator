@@ -59,11 +59,20 @@
                 <div class="col-md-6">
                     <div class="form-group">
                         <label>Metabox Context</label>
-                        <input type="text" class="form-control" id="mb_context" value="normal">
+                        <select id="mb_context" class="form-control">
+                            <option value="normal">Normal</option>
+                            <option value="advance">Advance</option>
+                            <option value="side">Side</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Metabox Priority</label>
-                        <input type="text" class="form-control" id="mb_priority" value="high">
+                        <select id="mb_priority" class="form-control">
+                            <option value="default">Default</option>
+                            <option value="high">High</option>
+                            <option value="core">Core</option>
+                            <option value="low">Low</option>low
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>PHP Function Name</label>
