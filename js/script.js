@@ -16,7 +16,7 @@
 
         $('#fields').on('click', '.remove', function (e) {
             e.preventDefault();
-            if (confirm("Are you sure to delete?")) {
+            if ($(".form-element").length > 1 && confirm("Are you sure to delete?")) {
                 $(this).parents(".form-element").remove();
                 $("#fields .form-element:last").find(".add-more").show();
             }
