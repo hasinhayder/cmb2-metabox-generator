@@ -1,0 +1,138 @@
+body {
+    padding-top: 40px;
+    font-family: "Open Sans";
+    font-size: 14px;
+}
+
+.maintitle {
+    font-size: 28px;
+}
+
+.section-dark {
+    background-color: #efefef;
+}
+
+.section-lite {
+    background-color: #fff;
+}
+
+.section {
+    margin-top: 20px;
+    padding: 50px 0px;
+}
+
+.section h2 {
+    font-size: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-element {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #DFE4E5;
+}
+
+.form-element.hide-params {
+    border-bottom: 0;
+}
+
+.footer {
+    background-color: #212121;
+    height: 140px;
+    line-height: 50px;
+    text-align: center;
+    color: #aaa;
+}
+
+.section.footer a {
+    color: #aaa;
+}
+
+.hero {
+    margin-bottom: 50px;
+}
+
+.generate {
+    text-align: center;
+    margin-top: 50px;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: 'Source Code Pro';
+}
+
+#code {
+    background-color: #272822;
+    padding: 20px;
+    font-size: 18px;
+    position: relative;
+}
+
+#copy-code {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0;
+    padding: 5px 15px;
+    outline: 0;
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.padding-right-0 {
+    padding-right: 0;
+}
+
+.padding-left-0 {
+    padding-left: 0;
+}
+
+.btn.disabled {
+    opacity: 0.4;
+}
+
+.btn-column {
+    padding-top: 25px;
+}
+
+.row-param {
+    background-color: rgba(243, 156, 18, 0.1);
+    margin-top: 5px;
+    padding: 4px 0;
+}
+
+.form-element.hide-params .row-param {
+    display: none;
+}
+
+.row-param > .row {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.row-param > .row h4 {
+    margin: 0;
+}
+
+.row-param > .row h4,
+.row-param > .row .param-option-title > ul,
+.row-param.row-options-sortable > .row .opt-select {
+    display: none;
+}
+
+.row-param > .row:first-child h4,
+.row-param > .row:first-child .param-option-title > ul,
+.row-param > .row:first-child .opt-select {
+    display: block;
+}
+
+.param-value-container > label {
+    padding-top: 5px;
+}
+
+.row-options h4 {
+    font-size: 14px;
+}
