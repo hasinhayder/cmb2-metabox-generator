@@ -1,0 +1,166 @@
+{
+    "fields": {
+        "title": [],
+        "text": [],
+        "text_small": [],
+        "text_medium": [],
+        "text_email": [],
+        "text_url": [
+            "protocols"
+        ],
+        "text_money": [],
+        "textarea": [],
+        "textarea_small": [],
+        "textarea_code": [],
+        "text_date": [
+            "date_format"
+        ],
+        "text_time": [
+            "time_format"
+        ],
+        "select_timezone": [],
+        "text_date_timestamp": [
+            "date_format",
+            "timezone_meta_key"
+        ],
+        "text_datetime_timestamp": [],
+        "text_datetime_timestamp_timezone": [],
+        "colorpicker": [],
+        "radio": [],
+        "radio_inline": [],
+        "taxonomy_radio": [
+            "taxonomy"
+        ],
+        "taxonomy_radio_inline": [
+            "taxonomy"
+        ],
+        "select": [],
+        "taxonomy_select": [
+            "taxonomy"
+        ],
+        "checkbox": [],
+        "multicheck": [
+            "select_all_button"
+        ],
+        "multicheck_inline": [
+            "select_all_button"
+        ],
+        "taxonomy_multicheck": [
+            "taxonomy",
+            "select_all_button"
+        ],
+        "taxonomy_multicheck_inline": [
+            "taxonomy",
+            "select_all_button"
+        ],
+        "wysiwyg": [
+            "options"
+        ],
+        "file": [
+            "options",
+            "preview_size"
+        ],
+        "file_list": [
+            "preview_size"
+        ],
+        "oembed": [],
+        "group": [
+            "options"
+        ]
+    },
+    "common_params": [
+        "desc",
+        "repeatable",
+        "show_names",
+        "before_row",
+        "before",
+        "before_field",
+        "after_field",
+        "after",
+        "after_row",
+        "row_classes",
+        "on_front",
+        "attributes",
+        "show_on_cb",
+        "escape_cb",
+        "sanitization_cb"
+    ],
+    "repeatable_exception": [
+        "title",
+        "radio",
+        "radio_inline",
+        "taxonomy_radio",
+        "taxonomy_radio_inline",
+        "taxonomy_select",
+        "checkbox",
+        "taxonomy_multicheck",
+        "wysiwyg",
+        "file",
+        "group"
+    ],
+    "escaping_exception": [
+        "file_list",
+        "multicheck",
+        "text_datetime_timestamp_timezone"
+    ],
+    "param_types": {
+        "boolean": [
+            "repeatable",
+            "show_names",
+            "on_front",
+            "sortable",
+            "select_all_button",
+            "wpautop",
+            "media_buttons",
+            "teeny",
+            "dfw",
+            "drag_drop_upload"
+        ],
+        "array": [
+            "options",
+            "attributes"
+        ],
+        "array_comma_separated": [
+            "preview_size",
+            "protocols"
+        ]
+    },
+    "param_options": {
+        "group": [
+            "group_title",
+            "add_button",
+            "remove_button",
+            "sortable"
+        ],
+        "wysiwyg": [
+            "wpautop",
+            "media_buttons",
+            "textarea_name",
+            "textarea_rows",
+            "tabindex",
+            "editor_css",
+            "editor_class",
+            "editor_height",
+            "teeny",
+            "dfw",
+            "tinymce",
+            "quicktags",
+            "drag_drop_upload"
+        ],
+        "file": [
+            "url"
+        ]
+    },
+    "param_options_sortable": [
+        "radio",
+        "radio_inline",
+        "select",
+        "multicheck",
+        "multicheck_inline"
+    ],
+    "translatable": [
+        "title",
+        "name",
+        "desc"
+    ]
+}
